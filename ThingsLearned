@@ -1,0 +1,11 @@
+KNN:
+  When the number of feature is big compared to the number of data points (even 14 features is too big for 180000 data points)
+  However, even if it is too big, you can still use KNN by reducing the number of features
+ 
+Gradient boosting:
+  Relatively slow.
+  There are local optimas for hyperparameter tuning as well. Have the submodels underfit the data and increase the number of estimators for better performance
+ 
+Ensemble:
+  If you want to ensemble the individual models by finding the best linear combination of individual predictions, use the predictions of validation data, 
+  and not the training data. Using the training data to find the best linear combination would be just making one super complicated model that overfits the training data
